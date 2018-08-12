@@ -19,7 +19,7 @@ let conversionFactor = recipeWeight / recipe.reduce((total, amount) => total + a
 
 //function creating final recipe array to be printed to page and used
 function finalRecipe (arr){
-  for (let i = 0; i < arr.length; i++ ){
+  for (let i = 0; i < arr.length; i++){
     console.log(i);
      newRecipe.push((cf * french[i]).toFixed(2));
   }
