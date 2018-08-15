@@ -7,20 +7,31 @@ let butterMilk = [];
 
 let recipeWeight;
 
+
+// assigns variable based on users checkbox
+
+let recipe;
+function submit() {
+  recipe = document.getElementById('frenchDough').value = french
+}
+
+submit()
+
+
+
 //factor used to figure out recipe
-let conversionFactor = recipeWeight / french.reduce((total, amount) => total + amount);
+let conversionFactor = 100 / recipe.reduce((total, amount) => total + amount);
 
 //function creating final recipe array to be printed to page and used
 let newRecipe = [];
 function finalRecipe (arr){
   for (let i = 0; i < arr.length; i++){
     console.log(i);
-     newRecipe.push((conversionFactor * french[i]).toFixed(2));
+     newRecipe.push((conversionFactor * arr[i]).toFixed(2));
   }
   return newRecipe
 }
-finalRecipe(french);
-
+finalRecipe(recipe)
 
 
 
