@@ -16,7 +16,7 @@ let newRecipe = [];
 function finalRecipe (arr){
   for (let i = 0; i < arr.length; i++){
     console.log(i);
-     newRecipe.push((cf * french[i]).toFixed(2));
+     newRecipe.push((conversionFactor * french[i]).toFixed(2));
   }
   return newRecipe
 }
