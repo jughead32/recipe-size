@@ -5,8 +5,7 @@
 let french = [100, 66, 2, 1.2];
 let butterMilk = [];
 
-let recipeWeight = document.getElementById('weight').value;// desired recipe weight
-console.log(recipeWeight)
+let recipeWeight;
 
 //factor used to figure out recipe
 let conversionFactor = recipeWeight / french.reduce((total, amount) => total + amount);
